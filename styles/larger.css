@@ -217,24 +217,27 @@
         font-size: 0.9rem;
         color: #e0e7ff;
     }
-}
 
-@media (min-width: 700px) {
     .main-grid {
         display: grid;
         grid-template-columns: 2fr 1fr;
-        grid-template-rows: auto auto;
+        grid-template-rows: auto auto auto;
         gap: 2rem;
         align-items: start;
     }
+    .main-title {
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+        margin-bottom: 0;
+    }
     .about-me {
         grid-column: 1 / 2;
-        grid-row: 1 / 2;
+        grid-row: 2 / 3;
         align-self: start;
     }
     .student-photo {
         grid-column: 2 / 3;
-        grid-row: 1 / 2;
+        grid-row: 2 / 3;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -242,7 +245,7 @@
     }
     .courses {
         grid-column: 1 / 3;
-        grid-row: 2 / 3;
+        grid-row: 3 / 4;
     }
 }
 
