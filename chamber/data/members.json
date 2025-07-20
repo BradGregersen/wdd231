@@ -1,0 +1,65 @@
+[
+    {
+      "name": "Rigby Hardware",
+      "address": "123 Main St, Rigby, ID",
+      "phone": "208-555-1001",
+      "website": "https://rigbyhardware.com",
+      "image": "images/hardware.jpg",
+      "membership": 3,
+      "tagline": "Your local hardware experts"
+    },
+    {
+      "name": "Sunrise Bakery",
+      "address": "456 Maple Ave, Rigby, ID",
+      "phone": "208-555-1002",
+      "website": "https://sunrisebakery.com",
+      "image": "images/bakery.jpg",
+      "membership": 2,
+      "tagline": "Fresh bread every morning"
+    },
+    {
+      "name": "Gregersen Law",
+      "address": "789 Oak St, Rigby, ID",
+      "phone": "208-555-1003",
+      "website": "https://gregersenlaw.com",
+      "image": "images/lawyer.jpg",
+      "membership": 1,
+      "tagline": "Legal help you can trust"
+    },
+    {
+      "name": "Idaho Fitness",
+      "address": "321 Pine St, Rigby, ID",
+      "phone": "208-555-1004",
+      "website": "https://idahofitness.com",
+      "image": "images/fitness.jpg",
+      "membership": 2,
+      "tagline": "Stronger together"
+    },
+    {
+      "name": "Mountain View Realty",
+      "address": "654 Cedar Ave, Rigby, ID",
+      "phone": "208-555-1005",
+      "website": "https://mountainviewrealty.com",
+      "image": "images/realtor.jpg",
+      "membership": 3,
+      "tagline": "Find your dream home"
+    },
+    {
+      "name": "Rigby Florist",
+      "address": "987 Spruce St, Rigby, ID",
+      "phone": "208-555-1006",
+      "website": "https://rigbyflorist.com",
+      "image": "images/florist.jpg",
+      "membership": 1,
+      "tagline": "Flowers for every occasion"
+    },
+    {
+      "name": "Tech Solutions",
+      "address": "159 Elm St, Rigby, ID",
+      "phone": "208-555-1007",
+      "website": "https://techsolutions.com",
+      "image": "images/tech.jpg",
+      "membership": 2,
+      "tagline": "Your IT partner"
+    }
+  ]

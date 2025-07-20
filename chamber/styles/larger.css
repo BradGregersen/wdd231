@@ -1,0 +1,347 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background: #f9fbfd;
+    color: #1a1a2e;
+    line-height: 1.5;
+}
+
+.main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    background: #1a237e;
+    color: #fff;
+    box-shadow: 0 2px 8px rgba(37, 99, 235, 0.10);
+}
+
+.logo-title {
+    display: flex;
+    align-items: center;
+    background: none;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.site-name {
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+    margin-left: 0.5rem;
+}
+
+.hamburger {
+    display: none !important;
+}
+
+nav ul {
+    display: flex !important;
+    flex-direction: row;
+    gap: 1rem;
+    background: none;
+    width: auto;
+    position: static;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    width: auto;
+}
+
+nav a {
+    background: none;
+    color: #fff;
+    border-bottom: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    transition: background 0.2s, color 0.2s;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+nav a.active,
+nav a:focus,
+nav a:hover {
+    background: #162168;
+    color: #fff;
+}
+
+.hero-image {
+    width: 100%;
+    height: 240px;
+    background: #e0e7ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.keynote-btn {
+    position: absolute;
+    right: 2rem;
+    bottom: 2rem;
+    background: #1a237e;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(37,99,235,0.08);
+    transition: background 0.2s;
+}
+
+.keynote-btn:hover,
+.keynote-btn:focus {
+    background: #162168;
+}
+
+.main-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(37,99,235,0.08);
+    padding: 1rem;
+    min-height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.card h2 {
+    background: #1a237e;
+    color: #fff;
+    padding: 0.75rem 1rem;
+    border-radius: 4px 4px 0 0;
+    margin: -1rem -1rem 1rem -1rem;
+    font-size: 1.2rem;
+}
+
+.directory-controls {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 1rem;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.directory-controls button {
+    background: #1a237e;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1.2rem;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.directory-controls button:hover,
+.directory-controls button:focus {
+    background: #162168;
+}
+
+#directory.business-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    max-width: 1100px;
+    margin: 0 auto 2rem auto;
+    padding: 0 1rem;
+}
+
+.business-card {
+    background: #f1f5f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(37,99,235,0.08);
+    padding: 1.5rem 1rem 1rem 1rem;
+    min-width: 240px;
+    max-width: 260px;
+    flex: 1 1 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+    transition: box-shadow 0.2s;
+}
+
+.business-card:hover {
+    box-shadow: 0 4px 16px rgba(37,99,235,0.16);
+}
+
+.business-card img {
+    width: 100%;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    background: #e0e7ff;
+    display: block;
+}
+
+.business-card h3 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+}
+
+.business-card p,
+.business-card a {
+    font-size: 0.98rem;
+    margin-bottom: 0.25rem;
+    word-break: break-word;
+}
+
+.business-card a {
+    color: #1a237e;
+    text-decoration: underline;
+    transition: color 0.2s;
+}
+
+.business-card a:hover,
+.business-card a:focus {
+    color: #f59e42;
+}
+
+.business-card strong {
+    font-weight: 600;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    gap: 1rem;
+    align-items: center;
+    padding: 1.5rem 1rem;
+    background: #1a237e;
+    color: #fff;
+    border-top: 4px solid #162168;
+    box-shadow: 0 -2px 8px rgba(37, 99, 235, 0.08);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-contact {
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.social-links a {
+    color: #fff;
+    font-size: 2.25rem;
+    transition: color 0.2s;
+}
+
+.social-links a:hover,
+.social-links a:focus {
+    color: #f59e42;
+}
+
+.footer-meta {
+    text-align: right;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+    .main-cards {
+        grid-template-columns: 1fr;
+    }
+    footer {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 1rem;
+    }
+    .footer-contact,
+    .footer-meta {
+        text-align: center;
+    }
+    .footer-social {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .main-container,
+    .main-cards,
+    #directory.business-row,
+    .directory-controls,
+    footer {
+        max-width: 100%;
+        padding: 0 0.5rem;
+    }
+    .business-card {
+        min-width: 90vw;
+        max-width: 100vw;
+    }
+}
+
+#directory.business-row.list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#directory.business-row.list .business-card {
+    max-width: 700px;
+    width: 100%;
+    margin: 0 0 1.5rem 0;
+    min-width: 0;
+    flex: none;
+}
