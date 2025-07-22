@@ -14,7 +14,7 @@ function displayMembers(members, isGrid) {
         const card = document.createElement('div');
         card.className = isGrid ? 'business-card' : 'business-list-item';
         card.innerHTML = `
-            <img src="${member.image}" alt="${member.name}">
+            ${isGrid ? `<img src="${member.image}" alt="${member.name}">` : ''}
             <div>
                 <h3>${member.name}</h3>
                 <p>${member.tagline}</p>
