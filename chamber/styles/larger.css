@@ -1,6 +1,4 @@
-*,
-*::before,
-*::after {
+*, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -33,9 +31,6 @@ header {
 .logo-title {
     display: flex;
     align-items: center;
-    background: none;
-    margin-bottom: 0;
-    padding: 0;
 }
 
 .site-name {
@@ -54,12 +49,7 @@ nav ul {
     display: flex !important;
     flex-direction: row;
     gap: 1rem;
-    background: none;
-    width: auto;
-    position: static;
     list-style: none;
-    margin: 0;
-    padding: 0;
 }
 
 nav li {
@@ -67,9 +57,7 @@ nav li {
 }
 
 nav a {
-    background: none;
     color: #fff;
-    border-bottom: none;
     border-radius: 4px;
     padding: 0.5rem 1rem;
     text-align: center;
@@ -220,7 +208,6 @@ nav a:hover {
     border-radius: 6px;
     margin-bottom: 1rem;
     background: #e0e7ff;
-    display: block;
 }
 
 .business-card h3 {
