@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rigby Chamber Directory</title>
+    <meta name="description" content="Directory of Rigby Chamber of Commerce members. View our business community and connect with local companies.">
+    <meta name="author" content="Bradley Gregersen">
+
+    <meta property="og:title" content="Rigby Chamber Directory">
+    <meta property="og:description" content="Directory of Rigby Chamber of Commerce members. View our business community and connect with local companies.">
+    <meta property="og:image" content="images/rigby.webp">
+    <meta property="og:url" content="https://bradgregersen.github.io/wdd231/directory.html">
+
+    <meta name="twitter:url" content="https://bradgregersen.github.io/wdd231/directory.html">
+    <meta name="twitter:title" content="Rigby Chamber Directory">
+    <meta name="twitter:description" content="Directory of Rigby Chamber of Commerce members. View our business community and connect with local companies.">
+    <meta name="twitter:card" content="summary">
+
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo-title">
+            <span class="site-name">Rigby Chamber of commerce Directory Page</span>
+        </div>
+        <button class="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="main-nav">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav id="main-nav">
+            <ul>
+                <li>
+                    <a href="index.html" title="Home page with community info, weather, calls to action, and business spotlights.">Home</a>
+                </li>
+                <li>
+                    <a href="discover.html" title="Discover locale history, demographics, events, and area images.">Discover</a>
+                </li>
+                <li>
+                    <a href="directory.html" title="Directory of local businesses and organizations in the chamber.">Directory</a>
+                </li>
+                <li>
+                    <a href="join.html" title="Join the chamber, see benefits, and apply for membership.">Join</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main-container">
+        <main>
+            <h1>Rigby Chamber Directory</h1>
+            <section class="hero-image">
+                <img src="images/rigby.webp" alt="Rigby street view">
+            </section>
+            <section class="main-cards">
+                <div class="card events">
+                    <h2>Events</h2>
+                    <p>Upcoming Chamber events will be listed here.</p>
+                </div>
+                <div class="card weather">
+                    <h2>Current Weather</h2>
+                    <div id="current-weather">
+                        <p>Loading...</p>
+                    </div>
+                </div>
+                <div class="card forecast">
+                    <h2>Weather Forecast</h2>
+                    <div id="weather-forecast">
+                        <p>Loading...</p>
+                    </div>
+                </div>
+            </section>
+            <section class="directory-controls">
+                <button id="grid-view" aria-label="Grid view">Grid</button>
+                <button id="list-view" aria-label="List view">List</button>
+            </section>
+            <section id="directory" class="business-row grid">
+            </section>
+        </main>
+    </div>
+    <footer>
+        <div class="footer-contact">
+            <strong>Rigby Chamber of Commerce</strong><br>
+            PO Box 327<br>
+            Rigby, ID 83442<br>
+            info@RigbyChamber.com<br>
+            208-745-8111
+        </div>
+        <div class="footer-social">
+            <div class="social-links">
+                <a href="https://github.com/BradGregersen" target="_blank" rel="noopener" aria-label="GitHub">
+                    <svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.5 2.87 8.32 6.84 9.67.5.09.68-.22.68-.48 0-.24-.01-.87-.01-1.7-2.78.62-3.37-1.36-3.37-1.36-.45-1.18-1.1-1.5-1.1-1.5-.9-.63.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.7 0 0 .84-.28 2.75 1.05A9.38 9.38 0 0 1 12 6.84c.85.004 1.71.12 2.51.35 1.91-1.33 2.75-1.05 2.75-1.05.55 1.4.2 2.44.1 2.7.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.07.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.58.69.48A10.01 10.01 0 0 0 22 12.26C22 6.58 17.52 2 12 2z"/>
+                    </svg>
+                </a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">
+                    <svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.27c-.97 0-1.75-.79-1.75-1.76s.78-1.76 1.75-1.76 1.75.79 1.75 1.76-.78 1.76-1.75 1.76zm13.5 11.27h-3v-5.6c0-1.34-.03-3.07-1.87-3.07-1.87 0-2.16 1.46-2.16 2.97v5.7h-3v-10h2.88v1.36h.04c.4-.75 1.38-1.54 2.84-1.54 3.04 0 3.6 2 3.6 4.59v5.59z"/>
+                    </svg>
+                </a>
+                <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter">
+                    <svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M22.46 5.95c-.79.35-1.64.59-2.53.7a4.48 4.48 0 0 0 1.97-2.48 8.94 8.94 0 0 1-2.83 1.08 4.48 4.48 0 0 0-7.64 4.08A12.72 12.72 0 0 1 3.11 4.6a4.48 4.48 0 0 0 1.39 5.98c-.7-.02-1.36-.21-1.94-.53v.05a4.48 4.48 0 0 0 3.6 4.39c-.33.09-.68.14-1.04.14-.25 0-.5-.02-.74-.07a4.48 4.48 0 0 0 4.18 3.11A9 9 0 0 1 2 19.54a12.72 12.72 0 0 0 6.88 2.02c8.26 0 12.78-6.84 12.78-12.78 0-.19 0-.37-.01-.56a9.1 9.1 0 0 0 2.24-2.32z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="footer-meta">
+            <div>
+                WDD231 Class Project<br>
+                Bradley Gregersen<br>
+                &copy; <span id="year"></span> Rigby Chamber of Commerce<br>
+                <span id="lastModified"></span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
