@@ -16,13 +16,17 @@
     <meta name="twitter:title" content="Rigby Chamber Directory">
     <meta name="twitter:description" content="Directory of Rigby Chamber of Commerce members. View our business community and connect with local companies.">
     <meta name="twitter:card" content="summary">
+    <link rel="dns-prefetch" href="https://api.weather.gov">
+    <link rel="preload" href="styles/larger.css" as="style">
+    <link rel="preload" href="data/members.json" as="fetch" crossorigin>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="stylesheet" href="styles/small.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"></noscript>
     <link rel="icon" href="images/favicon.ico">
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
@@ -59,9 +63,9 @@
     <div class="main-container">
         <main>
             <h1>Rigby Chamber Directory</h1>
-            <section class="hero-image">
-                <img src="images/rigby.webp" alt="Rigby street view">
-            </section>
+            <div class="hero-image">
+                <img src="images/rigby.webp" alt="Rigby street view" width="1200" height="400" loading="eager">
+            </div>
             <section class="main-cards">
                 <div class="card events">
                     <h2>Events</h2>
@@ -80,12 +84,12 @@
                     </div>
                 </div>
             </section>
-            <section class="directory-controls">
+            <div class="directory-controls">
                 <button id="grid-view" aria-label="Grid view">Grid</button>
                 <button id="list-view" aria-label="List view">List</button>
-            </section>
-            <section id="directory" class="business-row grid">
-            </section>
+            </div>
+            <div id="directory" class="business-row grid">
+            </div>
         </main>
     </div>
     <footer>

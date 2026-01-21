@@ -14,14 +14,14 @@ function displayMembers(members, isGrid) {
         const card = document.createElement('div');
         card.className = isGrid ? 'business-card' : 'business-list-item';
         card.innerHTML = `
-            ${isGrid ? `<img src="${member.image}" alt="${member.name}">` : ''}
+            ${isGrid ? `<img src="${member.image}" alt="${member.name}" width="300" height="200" loading="lazy">` : ''}
             <div>
                 <h3>${member.name}</h3>
                 <p>${member.tagline}</p>
                 <p><strong>Address:</strong> ${member.address}<br>
                 <strong>Phone:</strong> ${member.phone}<br>
                 <strong>Email:</strong> <a href="mailto:info@${member.website.replace(/^https?:\/\//, '')}">info@${member.website.replace(/^https?:\/\//, '')}</a><br>
-                <strong>URL:</strong> <a href="${member.website}" target="_blank">${member.website}</a><br>
+                <strong>URL:</strong> <a href="${member.website}" target="_blank" rel="noopener">${member.website}</a><br>
                 <strong>Membership:</strong> ${['Member','Silver','Gold'][member.membership-1]}</p>
             </div>
         `;
