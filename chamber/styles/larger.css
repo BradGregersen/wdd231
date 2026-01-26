@@ -396,3 +396,116 @@ footer {
 .business-list-item a:hover {
     color: #0d47a1;
 }
+
+.cta {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    background: linear-gradient(135deg, #f59e42, #e67e22);
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(245, 158, 66, 0.4);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.cta-button:hover,
+.cta-button:focus {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(245, 158, 66, 0.5);
+    color: #fff;
+}
+
+.membership-badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.membership-badge.gold {
+    background: linear-gradient(135deg, #ffd700, #b8860b);
+    color: #1a1a2e;
+}
+
+.membership-badge.silver {
+    background: linear-gradient(135deg, #c0c0c0, #808080);
+    color: #1a1a2e;
+}
+
+.membership-badge.member {
+    background: #1a237e;
+    color: #fff;
+}
+
+.weather-current {
+    text-align: center;
+}
+
+.weather-current img {
+    margin: -0.5rem 0;
+}
+
+.weather-current .temp-large {
+    font-size: 1.5rem;
+    margin: 0.25rem 0;
+}
+
+.forecast-days {
+    display: flex;
+    justify-content: space-around;
+    gap: 0.5rem;
+}
+
+.forecast-day {
+    text-align: center;
+    padding: 0.5rem;
+    background: #f0f4ff;
+    border-radius: 6px;
+    flex: 1;
+}
+
+.forecast-day img {
+    margin: 0.25rem 0;
+}
+
+.events-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.events-list li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #e5e7eb;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+.events-list li:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.events-list li:first-child {
+    padding-top: 0;
+}
+
+.events-list time {
+    color: #1a237e;
+    font-weight: 600;
+}
+
+.events-list strong {
+    color: #1a1a2e;
+    font-size: 1rem;
+}

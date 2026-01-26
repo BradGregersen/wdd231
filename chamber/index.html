@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rigby Chamber Directory</title>
-    <meta name="description" content="Directory of Rigby Chamber of Commerce members. View our business community and connect with local companies.">
+    <title>Rigby Chamber of Commerce | Home</title>
+    <meta name="description" content="Welcome to the Rigby Chamber of Commerce. Discover local businesses, events, weather, and community resources in Rigby, Idaho.">
     <meta name="author" content="Bradley Gregersen">
 
-    <meta property="og:title" content="Rigby Chamber Directory">
-    <meta property="og:description" content="Directory of Rigby Chamber of Commerce members. View our business community and connect with local companies.">
-    <meta property="og:image" content="images/rigby.webp">
-    <meta property="og:url" content="https://bradgregersen.github.io/wdd231/directory.html">
+    <meta property="og:title" content="Rigby Chamber of Commerce | Home">
+    <meta property="og:description" content="Welcome to the Rigby Chamber of Commerce. Discover local businesses, events, weather, and community resources in Rigby, Idaho.">
+    <meta property="og:image" content="https://bradgregersen.github.io/wdd231/chamber/images/rigby.webp">
+    <meta property="og:url" content="https://bradgregersen.github.io/wdd231/chamber/index.html">
 
-    <meta name="twitter:url" content="https://bradgregersen.github.io/wdd231/directory.html">
-    <meta name="twitter:title" content="Rigby Chamber Directory">
-    <meta name="twitter:description" content="Directory of Rigby Chamber of Commerce members. View our business community and connect with local companies.">
-    <meta name="twitter:card" content="summary">
+    <meta name="twitter:url" content="https://bradgregersen.github.io/wdd231/chamber/index.html">
+    <meta name="twitter:title" content="Rigby Chamber of Commerce | Home">
+    <meta name="twitter:description" content="Welcome to the Rigby Chamber of Commerce. Discover local businesses, events, weather, and community resources in Rigby, Idaho.">
+    <meta name="twitter:card" content="summary_large_image">
 
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/larger.css">
@@ -27,12 +27,12 @@
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
     <script src="scripts/weather.js" defer></script>
-    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/spotlight.js" defer></script>
 </head>
 <body>
     <header>
         <div class="logo-title">
-            <span class="site-name">Rigby Chamber of commerce Directory Page</span>
+            <span class="site-name">Rigby Chamber of Commerce</span>
         </div>
         <button class="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="main-nav">
             <span></span>
@@ -42,7 +42,7 @@
         <nav id="main-nav">
             <ul>
                 <li>
-                    <a href="index.html" title="Home page with community info, weather, calls to action, and business spotlights.">Home</a>
+                    <a href="index.html" class="active" title="Home page with community info, weather, calls to action, and business spotlights.">Home</a>
                 </li>
                 <li>
                     <a href="discover.html" title="Discover locale history, demographics, events, and area images.">Discover</a>
@@ -58,14 +58,33 @@
     </header>
     <div class="main-container">
         <main>
-            <h1>Rigby Chamber Directory</h1>
-            <section class="hero-image">
-                <img src="images/rigby.webp" alt="Rigby street view">
-            </section>
+            <h1>Welcome to Rigby Chamber of Commerce</h1>
+            <div class="hero-image">
+                <img src="images/rigby.webp" alt="Scenic view of Rigby, Idaho" width="1200" height="400" loading="eager">
+            </div>
+            <div class="cta">
+                <a href="join.html" class="cta-button">Join the Chamber</a>
+            </div>
             <section class="main-cards">
                 <div class="card events">
-                    <h2>Events</h2>
-                    <p>Upcoming Chamber events will be listed here.</p>
+                    <h2>Upcoming Events</h2>
+                    <ul class="events-list">
+                        <li>
+                            <strong>Annual Business Expo</strong><br>
+                            <time datetime="2025-03-15">March 15, 2025</time> - 9:00 AM<br>
+                            Jefferson County Fairgrounds
+                        </li>
+                        <li>
+                            <strong>Chamber Luncheon</strong><br>
+                            <time datetime="2025-03-22">March 22, 2025</time> - 12:00 PM<br>
+                            Rigby Community Center
+                        </li>
+                        <li>
+                            <strong>Small Business Workshop</strong><br>
+                            <time datetime="2025-04-05">April 5, 2025</time> - 6:00 PM<br>
+                            Virtual Event
+                        </li>
+                    </ul>
                 </div>
                 <div class="card weather">
                     <h2>Current Weather</h2>
@@ -80,11 +99,9 @@
                     </div>
                 </div>
             </section>
-            <section class="directory-controls">
-                <button id="grid-view" aria-label="Grid view">Grid</button>
-                <button id="list-view" aria-label="List view">List</button>
-            </section>
-            <section id="directory" class="business-row grid">
+            <section class="spotlights" id="spotlights">
+                <h2>Member Spotlights</h2>
+                <div class="spotlight-list"></div>
             </section>
         </main>
     </div>
