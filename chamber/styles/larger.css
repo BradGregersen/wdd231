@@ -88,6 +88,14 @@ nav a:hover {
     overflow: hidden;
 }
 
+.hero-image .cta-button {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
 .hero-image img {
     width: 100%;
     height: 220px;
@@ -421,6 +429,11 @@ footer {
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(245, 158, 66, 0.5);
     color: #fff;
+}
+
+.hero-image .cta-button:hover,
+.hero-image .cta-button:focus {
+    transform: translateX(-50%) translateY(-2px);
 }
 
 .membership-badge {

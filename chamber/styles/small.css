@@ -57,6 +57,11 @@
     .hero-image img {
         height: 120px;
     }
+    .hero-image .cta-button {
+        bottom: 10px;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+    }
     .main-cards {
         grid-template-columns: 1fr;
         gap: 1rem;
