@@ -127,13 +127,155 @@
     }
 
     .cta {
-        margin: 1.5rem 0;
-    }
+            margin: 1.5rem 0;
+        }
 
-    .cta-button {
-        padding: 0.75rem 1.5rem;
-        font-size: 1.1rem;
-        width: 90%;
-        text-align: center;
+        .cta-button {
+            padding: 0.75rem 1.5rem;
+            font-size: 1.1rem;
+            width: 90%;
+            text-align: center;
+        }
+
+        .intro-text {
+            font-size: 1rem;
+            padding: 0 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .join-container {
+            flex-direction: column;
+            gap: 1.5rem;
+            padding: 0 0.5rem;
+        }
+
+        .join-form-section {
+            padding: 1rem;
+        }
+
+        .join-form-section h2 {
+            margin: -1rem -1rem 1rem -1rem;
+            font-size: 1.1rem;
+        }
+
+        .join-form {
+            gap: 0.75rem;
+        }
+
+        .join-form label {
+            font-size: 0.95rem;
+        }
+
+        .join-form input[type="text"],
+        .join-form input[type="email"],
+        .join-form input[type="tel"],
+        .join-form textarea {
+            padding: 0.6rem;
+            font-size: 1rem;
+        }
+
+        .membership-fieldset {
+            padding: 0.75rem;
+        }
+
+        .radio-label {
+            padding: 0.4rem 0;
+            font-size: 0.95rem;
+        }
+
+        .submit-btn {
+            padding: 0.85rem 1.5rem;
+            font-size: 1rem;
+        }
+
+        .membership-cards {
+            width: 100%;
+            order: 2;
+        }
+
+        .membership-cards h2 {
+            font-size: 1.2rem;
+        }
+
+        .cards-grid {
+            grid-template-columns: 1fr;
+            gap: 0.75rem;
+        }
+
+        .membership-card {
+            padding: 1rem;
+        }
+
+        .membership-card h3 {
+            font-size: 1.1rem;
+        }
+
+        .membership-card .price {
+            font-size: 1.1rem;
+        }
+
+        .membership-card p {
+            font-size: 0.9rem;
+        }
+
+        .modal {
+            padding: 0.5rem;
+        }
+
+        .modal-content {
+            padding: 1.5rem;
+            max-height: 90vh;
+            overflow-y: auto;
+        }
+
+        .modal-content h2 {
+            font-size: 1.3rem;
+            padding-right: 2rem;
+        }
+
+        .modal-content .modal-price {
+            font-size: 1.1rem;
+        }
+
+        .modal-content h3 {
+            font-size: 1rem;
+        }
+
+        .modal-content li {
+            font-size: 0.9rem;
+            padding: 0.4rem 0;
+            padding-left: 1.25rem;
+        }
+
+        .close-modal {
+            top: 0.75rem;
+            right: 0.75rem;
+            font-size: 1.75rem;
+        }
+
+        .confirmation-box {
+            padding: 1.5rem 1rem;
+            margin: 1rem;
+        }
+
+        .confirmation-box h1 {
+            font-size: 1.5rem;
+        }
+
+        .confirmation-intro {
+            font-size: 0.95rem;
+        }
+
+        .submitted-data {
+            padding: 1rem;
+        }
+
+        .submitted-data p {
+            font-size: 0.95rem;
+            padding: 0.4rem 0;
+        }
+
+        .confirmation-message {
+            font-size: 0.95rem;
+        }
     }
-}
