@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site plan for the Computing History Archive - a website about the history of computers, computing pioneers, and computing milestones.">
+    <meta name="author" content="Brad Gregersen">
+    <title>Site Plan | Computing History Archive</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Source+Code+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --steel-blue: #2c5282;
+            --copper: #c05621;
+            --off-white: #fffaf0;
+            --slate-gray: #4a5568;
+            --font-primary: 'Inter', sans-serif;
+            --font-mono: 'Source Code Pro', monospace;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: var(--font-primary); background-color: var(--off-white); color: var(--slate-gray); line-height: 1.6; }
+        header { background-color: var(--steel-blue); color: var(--off-white); text-align: center; padding: 2rem 1rem; }
+        header h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+        header p { font-family: var(--font-mono); color: var(--copper); }
+        main { max-width: 900px; margin: 0 auto; padding: 1rem; }
+        section { background-color: #fff; margin: 1.5rem 0; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        section h2 { color: var(--steel-blue); border-bottom: 3px solid var(--copper); padding-bottom: 0.5rem; margin-bottom: 1rem; }
+        section h3 { color: var(--steel-blue); margin: 1rem 0 0.5rem; }
+        section p { margin-bottom: 0.75rem; }
+        section ul { margin-left: 1.5rem; margin-bottom: 1rem; }
+        section li { margin-bottom: 0.5rem; }
+        table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+        th, td { padding: 0.75rem; text-align: left; border-bottom: 1px solid #ddd; }
+        th { background-color: var(--steel-blue); color: var(--off-white); }
+        .color-preview { width: 30px; height: 30px; border-radius: 4px; display: inline-block; vertical-align: middle; border: 1px solid #ddd; }
+        .monospace { font-family: var(--font-mono); }
+        code { font-family: var(--font-mono); background-color: rgba(44,82,130,0.1); padding: 0.15rem 0.4rem; border-radius: 3px; }
+        .wireframe-container { display: flex; flex-direction: column; gap: 2rem; margin-top: 1rem; }
+        .wireframe-mobile, .wireframe-desktop { border: 2px solid var(--slate-gray); border-radius: 8px; padding: 1rem; background-color: #fff; }
+        .wireframe-mobile figcaption, .wireframe-desktop figcaption { text-align: center; font-weight: 600; color: var(--steel-blue); margin-bottom: 1rem; }
+        .wireframe-mobile img, .wireframe-desktop img { width: 100%; height: auto; display: block; border-radius: 4px; }
+        footer { background-color: var(--slate-gray); color: var(--off-white); text-align: center; padding: 1.5rem; margin-top: 2rem; }
+        @media (min-width: 600px) {
+            .wireframe-container { flex-direction: row; align-items: flex-start; }
+            .wireframe-mobile { flex: 0 0 auto; max-width: 200px; }
+            .wireframe-desktop { flex: 1; }
+            header h1 { font-size: 2.5rem; }
+            main { padding: 2rem; }
+            section { padding: 2rem; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Computing History Archive</h1>
+        <p>Site Plan Document</p>
+    </header>
+
+    <main>
+        <section id="overview">
+            <h2>Site Overview</h2>
+            <p><strong>Site Name:</strong> Computing History Archive</p>
+            <p>I chose this name because it clearly identifies the subject matter (computing) and the nature of the site (a historical archive). It is appropriate for students, educators, and technology enthusiasts.</p>
+            <p><strong>Purpose:</strong> This site provides a comprehensive look at computing history by offering an interactive timeline of milestones and profiles of key pioneers for students, educators, and technology enthusiasts.</p>
+        </section>
+
+        <section id="scenarios">
+            <h2>Scenarios</h2>
+            <ul>
+                <li><strong>Scenario 1:</strong> "Who invented the first programmable computer?"</li>
+                <li><strong>Scenario 2:</strong> "What was the first instance of a computer, mechanical or electronic, in the world?"</li>
+            </ul>
+        </section>
+
+        <section id="color-scheme">
+            <h2>Color Scheme</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Color</th>
+                        <th>Hex Code</th>
+                        <th>Usage</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="color-preview" style="background-color: #2c5282;"></span> Steel Blue</td>
+                        <td class="monospace">#2c5282</td>
+                        <td>Headers, navigation background, primary buttons</td>
+                    </tr>
+                    <tr>
+                        <td><span class="color-preview" style="background-color: #c05621;"></span> Copper</td>
+                        <td class="monospace">#c05621</td>
+                        <td>Accent color, call-to-action buttons, links, highlights</td>
+                    </tr>
+                    <tr>
+                        <td><span class="color-preview" style="background-color: #fffaf0;"></span> Off-White</td>
+                        <td class="monospace">#fffaf0</td>
+                        <td>Page background</td>
+                    </tr>
+                    <tr>
+                        <td><span class="color-preview" style="background-color: #4a5568;"></span> Slate Gray</td>
+                        <td class="monospace">#4a5568</td>
+                        <td>Body text, paragraphs</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="typography">
+            <h2>Typography</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Font</th>
+                        <th>Usage</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Inter (Sans-serif)</td>
+                        <td>Headings (h1-h6) and body text</td>
+                    </tr>
+                    <tr>
+                        <td class="monospace">Source Code Pro (Monospace)</td>
+                        <td>Dates, years, pioneer quotes, special accents</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="wireframe">
+            <h2>Wireframe</h2>
+            <p>The following wireframes represent the home page layout for mobile and desktop views.</p>
+            <div class="wireframe-container">
+                <figure class="wireframe-mobile">
+                    <figcaption>Mobile View (320px)</figcaption>
+                    <img src="images/mobile.png" alt="Mobile wireframe showing stacked layout with hamburger menu, hero section, pioneer cards, milestone cards, and footer">
+                </figure>
+                <figure class="wireframe-desktop">
+                    <figcaption>Desktop View</figcaption>
+                    <img src="images/desktop.png" alt="Desktop wireframe showing horizontal navigation, hero section, three pioneer cards in a row, two milestone cards side by side, and footer">
+                </figure>
+            </div>
+        </section>
+
+        <section id="page-structure">
+            <h2>Page Structure</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Page</th>
+                        <th>Filename</th>
+                        <th>Purpose</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Home</td>
+                        <td class="monospace">index.html</td>
+                        <td>Landing page featuring 3 highlighted pioneers and 2 key milestones, plus site introduction</td>
+                    </tr>
+                    <tr>
+                        <td>Pioneers</td>
+                        <td class="monospace">pioneers.html</td>
+                        <td>Full list of 15+ computing pioneers with filtering capabilities and modal details</td>
+                    </tr>
+                    <tr>
+                        <td>Timeline</td>
+                        <td class="monospace">timeline.html</td>
+                        <td>Chronological milestones display with embedded contact form</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="data-structure">
+            <h2>Data Structure</h2>
+            <p>The site will use two JSON data sources:</p>
+
+            <h3>Pioneers Data</h3>
+            <ul>
+                <li><code>name</code> &mdash; Full name of the pioneer</li>
+                <li><code>birthYear</code> &mdash; Year of birth</li>
+                <li><code>deathYear</code> &mdash; Year of death (null if living)</li>
+                <li><code>image</code> &mdash; Path to image file</li>
+                <li><code>contribution</code> &mdash; What they created or invented</li>
+                <li><code>quote</code> &mdash; A famous quote from them</li>
+            </ul>
+
+            <h3>Milestones Data</h3>
+            <ul>
+                <li><code>year</code> &mdash; Year the event occurred</li>
+                <li><code>title</code> &mdash; Name of the event/milestone</li>
+                <li><code>description</code> &mdash; What happened</li>
+                <li><code>impact</code> &mdash; Why it matters</li>
+                <li><code>category</code> &mdash; Type (hardware, software, networking, consumer)</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Computing History Archive | Brad Gregersen | WDD 231</p>
+    </footer>
+</body>
+</html>
